@@ -1,0 +1,13 @@
+mixin product-item (pet)
+    .animal-section__item
+        a(href="#")
+            .animal-section__img 
+                img(src= pet.image , alt= pet.title) 
+            .animal-section__content 
+                .animal-section__product-name #{pet.title}
+                .animal-section__product-info 
+                    .animal-section__product-info-item Giống
+                        <b>#{pet.gender}</b>
+                    .animal-section__product-info-item Tuổi: 
+                        <b>#{pet.age}</b>
+                .animal-section__product-price  #{pet.price}
